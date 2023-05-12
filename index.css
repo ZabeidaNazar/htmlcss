@@ -164,7 +164,11 @@ h2 {
     padding-bottom: 100px;
 }
 
-
+@media (max-width: 819px) {
+    .container {
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 749px) {
     .start__content {
