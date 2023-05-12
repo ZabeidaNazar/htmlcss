@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пам'ятка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_table.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="https://zabeidanazar.github.io/html-css/images/logo.svg">
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="../index.html">
+                    <img src="https://zabeidanazar.github.io/html-css/images/home-link.svg" alt="посилання на головну сторінку">
+                </a>
+            </li>
+            <li>
+                <a href="../table_html/html_table.html">Html</a>
+            </li>
+            <li>
+                <a href="../table_css/css_table.html">Css</a>
+            </li>
+            <li>
+                <a href="../about/about.html">Додатково</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <h2 id="css">Css</h2>
+        <p>
+            <img src="https://astwellsoft.com/assets/images/technologies/css3-logo-.png" height="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUnkiT9QTD1LqFXFOTmJRqJEM1-rClQ6L-g&usqp=CAU" height="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJ1cf-bUX2R6r9NediKgwMpLhdRF23NKu5w&usqp=CAU" height="200px">
+        </p>
+        
+
+        <p>Css стилі записуються в атрибуті style:<br>стиль: значення; стиль: значення</p>
+        <p>Наприклад задамо параграфу з текстом 'Hello world!' зелений фон і жовтий колір тексту<br>
+            Код виглядатиме ось так:<br>
+            <font>&ltp style="background-color: green; color: yellow"&gtHello world!&lt/p&gt</font>
+            <br>Результат:<br>
+        </p>
+        <p>Hello world!</p>
+
+
+
+        
+        <h3 id="style">Css стилі</h3>
+        <table>
+            <tr>
+                <td>Css стилі</td>
+                <td>Призначення</td>
+                <td>Приклади значень</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Межа<br>(товщина тип колір)</td>
+                <td>1px solid black<br>3px solid green</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Колір фону</td>
+                <td rowspan="2">red, green, blue...<br>#f4ffe5, #FFFF00<br>
+                    <i>
+                        Сайти з кольрами:<br>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8C%D0%BE%D1%80%D0%B8_HTML" style="font-size: 16px">Вікіпедія</a><br>
+                        <a href="https://www.w3schools.com/colors/colors_names.asp">Кольори, які можна задавати словами</a>
+                    </i>
+                </td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Колір тексту</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Шрифт</td>
+                <td>sans-serif (шрифти без засічок)</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Розмір символів</td>
+                <td>10px, 50px, 25px...</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Розміщення тексту</td>
+                <td>right, left, center</td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>Проміжки між межами в таблиці</td>
+                <td>collapse (прибирає проміжки між межами)</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Зовнішній відступ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Вну</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>border-radius</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td></td>
+                <td>flex</td>
+            </tr>
+        </table>
+
+        <h3>Все що стосується display: flex</h3>
+        <table>
+            <tr>
+                <td>justify-content</td>
+                <td>Вирівнювання елементів по горизонталі</td>
+                <td>center<br>space-beetwen<br>space-around<br>flex-start<br>flex-end</td>
+            </tr>
+            <tr>
+                <td>align-items</td>
+                <td>Вирівнювання елементів по вертикалі</td>
+                <td>center<br></td>
+            </tr>
+            <tr>
+                <td>flex-wrap</td>
+                <td>Перенесення елементів на нові рядки</td>
+                <td>wrap<br>no-wrap</td>
+            </tr>
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </table>
+
+
+    </main>
+    <footer class="footer">
+        <div class="text">
+            <h3>Контактні дані:</h3>
+            <p>Номер телофону — 0671206362<br>Електронна адреса — nazarzabeida@gmail.com</p>
+            <h3>Корисні сайти:</h3>
+            <p>
+                <a href="https://css.in.ua/">Український веб-довідник</a>
+            </p>
+
+            <h3>Соцмережі:</h3>
+            <a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-256.png" height="30px">
+            </a>
+            <a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png" height="30px">
+            </a>
+            <a href="#">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_25-256.png" height="30px">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

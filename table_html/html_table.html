@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пам'ятка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="html_table.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="https://zabeidanazar.github.io/html-css/images/logo.svg">
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="../index.html">
+                    <img src="https://zabeidanazar.github.io/html-css/images/home-link.svg" alt="посилання на головну сторінку">
+                </a>
+            </li>
+            <li>
+                <a href="../table_html/html_table.html">Html</a>
+            </li>
+            <li>
+                <a href="../table_css/css_table.html">Css</a>
+            </li>
+            <li>
+                <a href="../about/about.html">Додатково</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <h2 id="html">Html</h2>
+        <p>
+            <img src="https://astwellsoft.com/assets/images/technologies/html5-logo.png" height="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7rq2G6jja3bja7ottt0nDplvApog8p0HXg&usqp=CAU" height="200px">
+            <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" height="200px">
+            <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/HTML-Tree-Structure.png" height="200px">
+        </p>
+        <p>Теги записуються у &lt&gt</p>
+        <p>Html теги бувають:<br>одинарні: &ltbr&gt, &ltimg&gt<br>парні: &lthtml&gt&lt/html&gt, &ltbody&gt&lt/body&gt, &lth1&gt&lt/h1&gt, &ltp&gt&lt/p&gt, &lta&gt&lt/a&gt</p>
+        <p>Парні теги складаються з відкриваючого &ltтег&gt (&lttitle&gt) і закриваючого &lt/тег&gt (&lt/title&gt) тегів.</p>
+        <p>Одинарні теги складаються тільки з відкриваючого тегу.</p>
+        <p>Атрибути записуються до відкриваючого тегу через пробіл, значення атрибуту записується після знаку = в лапках "":<br>&ltтег атрибут=""&gt&lt/тег&gt<br>Атрибутів може бути декілька.</p>
+
+
+        <p>Всі теги мають атрибут style, за допомогою якого можна задавати Css стилі.</p>
+        <p>Також всі теги мають атрибут id, за допомогою якого можна створити посилання на частину сайту.<br> id тегів повинні бути унікальними, вони не мають повторюватися!</p>
+        <p>Наприклад, в нас є абзац зі статтею, проте він знаходиться в самому кінці.<br>
+            <font>&ltp&gtСтаття&lt/p&gt</font><br>
+            На початку сайту ми хочемо зробити зміст, який матиме посилання на цю статтю.<br>
+            <font>&lth3&gtЗміст&lt/h3&gt</font><br>
+            Додамо до тегу &ltp&gt атрибут id зі значенням, наприклад, last-article.<br>
+            <font>&ltp id="last-article"&gtСтаття&lt/p&gt</font><br>
+            Після цього скористаємося тегом &lta&gt, вказавши в посиланні символ #, а тоді id елемента, на який хочемо переходити.<br>
+            <font>&lth3&gtЗміст&lt/h3&gt</font><br>
+            <font>&lta href="#last-article"&gtОстання стаття&lt/a&gt</font><br>
+            Тепер при натисканні на текст "Остання статя" ми будемо переходити до абзацу, id якого last-article.
+        </p>
+        <h3 id="tagtag">Парні теги</h3>
+        <table>
+            <tr>
+                <td>Тег</td>
+                <td>Призначення</td>
+                <td>Атрибути</td>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>В даному тегу знаходиться весь html код</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Текст на вкладці браузера</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>В даному тегу знаходиться та інформація, яку користувач бачить на сайті</td>
+                <td>background — зображення на фоні</td>
+            </tr>
+            <tr>
+                <td>header</td>
+                <td>Шапка сайту з логотипом і меню</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>main</td>
+                <td>Основна частина сайту</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td>Підвал сайту з контактними даними, посиланнями на соцмережі...</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>h1..h6</td>
+                <td>Заголовки h1 — найбільший, h6 — найменший</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Абзац тексту</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>Робить текст або картинку посиланням</td>
+                <td>href — посилання</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>Жирний текст</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td>Курсивний текст</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>Таблиця</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>tr</td>
+                <td>Рядок таблиці</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>Комірка таблиці</td>
+                <td>colspan — об'єднання комірок в колонках (по горизонталі) <br>rowspan — об'єднання комірок в рядках (по вертикалі)</td>
+            </tr>
+            <tr>
+                <td>font</td>
+                <td>Колір частинки тексту</td>
+                <td>color — колір</td>
+            </tr>
+            <tr>
+                <td>ol</td>
+                <td>Нумерований список</td>
+                <td>type - тип позначок</td>
+            </tr> 
+            <tr>
+                <td>ul</td>
+                <td>Маркований список</td>
+                <td>type - тип позначок</td>
+            </tr>
+         <!--    <tr>
+                <td>li</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </table>
+
+
+        <h3 id="tag">Одинарні теги</h3>
+        <table>
+            <tr>
+                <td>Тег</td>
+                <td>Призначення</td>
+                <td>Атрибути</td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>Вставлення зображення</td>
+                <td>src — посилання на зображення<br>width — ширина зображення<br>height — висота зображення<br>opacity — прозорість (від 0 до 1)</td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>Переносить на наступний рядок</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>link</td>
+                <td>Підключення css, шрифтів і тд.</td>
+                <td>rel="stylesheet" - для підключення css<br>href - посилання на елемент, який підключаємо</td>
+            </tr>
+        </table>
+        <p>
+            <i>*Теги мають дуже багато атрибутів,<br>позначені тільки ті, які вивчалися!</i>
+        </p>
+        <p>
+            <i>**Атрибути id і style не зазначені,<br>оскільки їх мають усі теги.</i>
+        </p>
+        
+
+
+    </main>
+    <footer class="footer">
+        <div class="text">
+            <h3>Контактні дані:</h3>
+            <p>Номер телофону — 0671206362<br>Електронна адреса — nazarzabeida@gmail.com</p>
+            <h3>Корисні сайти:</h3>
+            <p>
+                <a href="https://css.in.ua/">Український веб-довідник</a>
+            </p>
+
+            <h3>Соцмережі:</h3>
+            <a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-256.png" height="30px">
+            </a>
+            <a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png" height="30px">
+            </a>
+            <a href="#">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_25-256.png" height="30px">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

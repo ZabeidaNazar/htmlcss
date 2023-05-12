@@ -1,0 +1,40 @@
+/* footer */
+
+.footer .container {
+    background-color: #504E5E;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.footer__content {
+    padding: 20px 30px;
+
+}
+
+.footer .text {
+    background-color: #D0D0D2;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.footer .text h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer .text p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer .text p a {
+    color: black;
+}
+
+
+@media (max-width: 849px) {
+    .footer .container {
+        border-radius: unset;
+    }
+}
