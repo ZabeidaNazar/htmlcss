@@ -51,6 +51,9 @@ h1 {
     padding-bottom: 50px;
 }
 
+.scroll-x {
+    overflow-x: scroll;
+}
 
 table {
     font-size: 20px; 

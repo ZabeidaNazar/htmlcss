@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пам'ятка</title>
+    <title>Html & Css</title>
     <link rel="preconnect" href="https://spans.googleapis.com">
     <link rel="preconnect" href="https://spans.gstatic.com" crossorigin>
     <link href="https://spans.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="about__content">
                     <h1 id="html">Html</h1>
-                    <p>
+                    <p class="html_img">
                         <img src="https://astwellsoft.com/assets/images/technologies/html5-logo.png" height="200px">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7rq2G6jja3bja7ottt0nDplvApog8p0HXg&usqp=CAU" height="200px">
                         <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" height="200px">
@@ -54,7 +54,8 @@
                     <p>Атрибути записуються до відкриваючого тегу через пробіл, значення атрибуту записується після знаку = в лапках "":<br>&ltтег атрибут=""&gt&lt/тег&gt<br>Атрибутів може бути декілька.</p>
             
             
-                    <p>Всі теги мають атрибут style, за допомогою якого можна задавати Css стилі.</p>
+                    <p>Всі теги мають атрибут style, за допомогою якого можна задавати Css стилі, як значення атрибуту.</p>
+                    <p>Всі теги мають атрибут class, за допомогою якого можна задавати Css стилі за допомогою css файлу.</p>
                     <p>Також всі теги мають атрибут id, за допомогою якого можна створити посилання на частину сайту.<br> id тегів повинні бути унікальними, вони не мають повторюватися!</p>
                     <p>Наприклад, в нас є абзац зі статтею, проте він знаходиться в самому кінці.<br>
                         <span>&ltp&gtСтаття&lt/p&gt</span><br>
@@ -74,153 +75,155 @@
             <div class="container">
                 <div class="tagtag__content">
                     <h2 id="tagtag">Парні теги</h2>
-                    <table>
-                        <thead>
+                    <div class="scroll-x">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Тег</td>
+                                    <td>Призначення</td>
+                                    <td>Атрибути</td>
+                                </tr>
+                            </thead>
                             <tr>
-                                <td>Тег</td>
-                                <td>Призначення</td>
-                                <td>Атрибути</td>
+                                <td>html</td>
+                                <td>В даному тегу знаходиться весь html код</td>
+                                <td>—</td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td>html</td>
-                            <td>В даному тегу знаходиться весь html код</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>title</td>
-                            <td>Текст на вкладці браузера</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>body</td>
-                            <td>В даному тегу знаходиться та інформація, яку користувач бачить на сайті</td>
-                            <td>background — зображення на фоні</td>
-                        </tr>
-                        <tr>
-                            <td>header</td>
-                            <td>Шапка сайту з логотипом і меню</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>main</td>
-                            <td>Основна частина сайту</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>footer</td>
-                            <td>Підвал сайту з контактними даними, посиланнями на соцмережі...</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>h1..h6</td>
-                            <td>Заголовки h1 — найбільший, h6 — найменший</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>p</td>
-                            <td>Абзац тексту</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>a</td>
-                            <td>Робить текст або картинку посиланням</td>
-                            <td>href — посилання</td>
-                        </tr>
-                        <tr>
-                            <td>b</td>
-                            <td>Жирний текст</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>i</td>
-                            <td>Курсивний текст</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>table</td>
-                            <td>Таблиця</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>tr</td>
-                            <td>Рядок таблиці</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>Комірка таблиці</td>
-                            <td>colspan — об'єднання комірок в колонках (по горизонталі) <br>rowspan — об'єднання комірок в рядках (по вертикалі)</td>
-                        </tr>
-                        <tr>
-                            <td>ol</td>
-                            <td>Нумерований список</td>
-                            <td>type - тип позначок</td>
-                        </tr> 
-                        <tr>
-                            <td>ul</td>
-                            <td>Маркований список</td>
-                            <td>type - тип позначок</td>
-                        </tr>
-                        <tr>
-                            <td>li</td>
-                            <td>Елемент списку</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>div</td>
-                            <td>Блок</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>section</td>
-                            <td>Секція</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>article</td>
-                            <td>Незалежний блок</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>aside</td>
-                            <td>Стороння інформація</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>span</td>
-                            <td>Виділення частинки тексту</td>
-                            <td>color — колір</td>
-                        </tr>
-                        <!-- <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr> -->
-                        
-                        
+                            <tr>
+                                <td>title</td>
+                                <td>Текст на вкладці браузера</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>body</td>
+                                <td>В даному тегу знаходиться та інформація, яку користувач бачить на сайті</td>
+                                <td>background — зображення на фоні</td>
+                            </tr>
+                            <tr>
+                                <td>header</td>
+                                <td>Шапка сайту з логотипом і меню</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>main</td>
+                                <td>Основна частина сайту</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>footer</td>
+                                <td>Підвал сайту з контактними даними, посиланнями на соцмережі...</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>h1..h6</td>
+                                <td>Заголовки h1 — найбільший, h6 — найменший</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>p</td>
+                                <td>Абзац тексту</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>a</td>
+                                <td>Робить текст або картинку посиланням</td>
+                                <td>href — посилання</td>
+                            </tr>
+                            <tr>
+                                <td>b</td>
+                                <td>Жирний текст</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>i</td>
+                                <td>Курсивний текст</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>table</td>
+                                <td>Таблиця</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>tr</td>
+                                <td>Рядок таблиці</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>td</td>
+                                <td>Комірка таблиці</td>
+                                <td>colspan — об'єднання комірок в колонках (по горизонталі) <br>rowspan — об'єднання комірок в рядках (по вертикалі)</td>
+                            </tr>
+                            <tr>
+                                <td>ol</td>
+                                <td>Нумерований список</td>
+                                <td>type - тип позначок</td>
+                            </tr> 
+                            <tr>
+                                <td>ul</td>
+                                <td>Маркований список</td>
+                                <td>type - тип позначок</td>
+                            </tr>
+                            <tr>
+                                <td>li</td>
+                                <td>Елемент списку</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>div</td>
+                                <td>Блок</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>section</td>
+                                <td>Секція</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>article</td>
+                                <td>Незалежний блок</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>aside</td>
+                                <td>Стороння інформація</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>span</td>
+                                <td>Виділення частинки тексту</td>
+                                <td>color — колір</td>
+                            </tr>
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                            
+                            
 
-                        <!-- <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr> -->
-                    </table>
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -228,28 +231,30 @@
             <div class="container">
                 <div class="tag__content">
                     <h2 id="tag">Одинарні теги</h2>
-                    <table>
-                        <tr>
-                            <td>Тег</td>
-                            <td>Призначення</td>
-                            <td>Атрибути</td>
-                        </tr>
-                        <tr>
-                            <td>img</td>
-                            <td>Вставлення зображення</td>
-                            <td>src — посилання на зображення<br>width — ширина зображення<br>height — висота зображення<br>opacity — прозорість (від 0 до 1)</td>
-                        </tr>
-                        <tr>
-                            <td>br</td>
-                            <td>Переносить на наступний рядок</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>link</td>
-                            <td>Підключення css, шрифтів і тд.</td>
-                            <td>rel="stylesheet" - для підключення css<br>href - посилання на елемент, який підключаємо</td>
-                        </tr>
-                    </table>
+                    <div class="scroll-x">
+                        <table>
+                            <tr>
+                                <td>Тег</td>
+                                <td>Призначення</td>
+                                <td>Атрибути</td>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>Вставлення зображення</td>
+                                <td>src — посилання на зображення<br>width — ширина зображення<br>height — висота зображення<br>opacity — прозорість (від 0 до 1)</td>
+                            </tr>
+                            <tr>
+                                <td>br</td>
+                                <td>Переносить на наступний рядок</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>link</td>
+                                <td>Підключення css, шрифтів і тд.</td>
+                                <td>rel="stylesheet" - для підключення css<br>href - посилання на елемент, який підключаємо</td>
+                            </tr>
+                        </table>
+                    </div>
                     <p>
                         <i>*Теги мають дуже багато атрибутів,<br>позначені тільки ті, які вивчалися!</i>
                     </p>

@@ -50,6 +50,10 @@ h1 {
     margin-top: 0;
 }
 
+.scroll-x {
+    overflow-x: scroll;
+}
+
 
 table {
     font-size: 20px; 
@@ -110,8 +114,11 @@ tfoot p {
 }
 
 
-@media (max-width: 469px) {
-
+@media (max-width: 421px) {
+    .html_img img:nth-child(3), .html_img img:nth-child(4) {
+        width: 100%;
+        height: unset;
+    }
 }
 
 @media (max-width: 399px) {
