@@ -43,6 +43,11 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 
 
 /* section about */
@@ -86,8 +91,8 @@ main p {
 /* --------------- Adaptive --------------- */
 .container {
     max-width: 800px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -95,25 +100,44 @@ main p {
 
 
 .table_css__content, .table_flex__content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
 }
 
 
 @media (max-width: 749px) {
+    html {
+        font-size: 14px;
+    }
 
+    h2 {
+        margin-top: 0;
+    }
 }
 
 
 @media (max-width: 599px) {
-
+    html {
+        font-size: 8px;
+    }
 }
 
 
-@media (max-width: 469px) {
-
+@media (max-width: 421px) {
+    .css_img :nth-child(2), .css_img :nth-child(3) {
+        height: unset;
+        width: 100%;
+    }
 }
 
 @media (max-width: 399px) {
 
 }
+
+
+@media (max-width: 469px) {
+    html {
+        font-size: 6px;
+    }
+}
+
