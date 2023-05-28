@@ -6,13 +6,13 @@
 }
 
 .footer__content {
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
 
 }
 
 .footer .text {
     background-color: #D0D0D2;
-    padding: 10px 30px;
+    padding: 10px 1.875rem;
     border-radius: 5px;
 }
 
