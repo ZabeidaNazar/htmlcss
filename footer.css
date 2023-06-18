@@ -28,6 +28,11 @@
     font-size: 14px;
 }
 
+.footer .text a img:hover {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
 .footer .text p a {
     color: black;
 }

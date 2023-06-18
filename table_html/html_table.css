@@ -67,6 +67,10 @@ table {
     text-align: center
 }
 
+tr:hover {
+    background-color: #ebe6fc;
+}
+
 td {
     border: 1px solid black;
     padding: 7px;
