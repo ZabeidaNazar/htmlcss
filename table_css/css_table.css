@@ -1,5 +1,6 @@
 @import url("../header.css");
 @import url("../footer.css");
+@import url("../command-table.css");
 
 * {
     box-sizing: border-box;
@@ -56,32 +57,54 @@ h2 {
     padding-bottom: 50px;
 }
 
-.scroll-x {
-    overflow-x: scroll;
+.about__content p {
+    font-size: 16px;
 }
 
-table {
-    font-size: 20px; 
-    border-collapse: collapse; 
-    border: 1px solid black; 
-    text-align: center
+.about__content .css_img {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem; 
 }
 
-tr:hover {
-    background-color: #ebe6fc;
+#css {
+    transition: 1.5s ease-in-out;
 }
 
-td {
-    border: 1px solid black;
-    padding: 7px;
+#css:hover {
+    text-shadow: 0 0 5px #29a9df, 0 0 10px #29a9df, 0 0 20px #29a9df, 0 0 20px #47b6e5, 0 0 20px #6ec2e7;
+    color: white;
 }
 
-span {
-    background-color: #bebee3;
-    border-radius: 4px;
-    padding: 2px 4px;
-    line-height: 40px;
+.about__content .css_img .img-wrapper {
+    overflow: hidden;
 }
+
+.about__content .css_img .img-wrapper:first-child {
+    overflow: unset;
+}
+
+.about__content .css_img .img-wrapper img {
+    transition: 0.7s all ease-in;
+    transform: scale(1.3);
+    filter: grayscale(1);
+}
+
+.about__content .css_img .img-wrapper img:hover {
+    transform: scale(1);
+    filter: grayscale(0);
+}
+
+.about__content .css_img .img-wrapper:first-child img {
+    transform: unset;
+    filter: unset;
+}
+
+.about__content .css_img .img-wrapper:first-child img:hover {
+    filter: drop-shadow(0 0 1rem #29a9df);
+}
+
 
 main p {
     font-size: 20px;

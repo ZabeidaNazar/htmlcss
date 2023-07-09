@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,11 +41,17 @@
             <div class="container">
                 <div class="about__content">
                     <h1 id="css">Css</h1>
-                    <p class="css_img">
-                        <img src="https://astwellsoft.com/assets/images/technologies/css3-logo-.png" height="200px">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUnkiT9QTD1LqFXFOTmJRqJEM1-rClQ6L-g&usqp=CAU" height="200px">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJ1cf-bUX2R6r9NediKgwMpLhdRF23NKu5w&usqp=CAU" height="200px">
-                    </p>
+                    <div class="css_img">
+                        <div class="img-wrapper">
+                            <img src="https://astwellsoft.com/assets/images/technologies/css3-logo-.png" height="200px">
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUnkiT9QTD1LqFXFOTmJRqJEM1-rClQ6L-g&usqp=CAU" height="200px">
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJ1cf-bUX2R6r9NediKgwMpLhdRF23NKu5w&usqp=CAU" height="200px">
+                        </div>
+                    </div>
                     
             
                     <p>Css стилі записуються в атрибуті style:<br>стиль: значення; стиль: значення</p>
@@ -54,7 +60,7 @@
                         <span>&ltp style="background-color: green; color: yellow"&gtHello world!&lt/p&gt</span>
                         <br>Результат:<br>
                     </p>
-                    <p>Hello world!</p>
+                    <p style="background-color: green; color: yellow">Hello world!</p>
                 </div>
             </div>
         </section>
@@ -63,97 +69,101 @@
                 <div class="table_css__content">
                     <h2 id="style">Css стилі</h2>
                     <div class="scroll-x">
-                        <table>
-                        <tr>
-                            <td>Css стилі</td>
-                            <td>Призначення</td>
-                            <td>Приклади значень</td>
-                        </tr>
-                        <tr>
-                            <td>border</td>
-                            <td>Межа<br>(товщина тип колір)</td>
-                            <td>1px solid black<br>3px solid green</td>
-                        </tr>
-                        <tr>
-                            <td>background-color</td>
-                            <td>Колір фону</td>
-                            <td rowspan="2">red, green, blue...<br>#f4ffe5, #FFFF00<br>
-                                <i>
-                                    Сайти з кольрами:<br>
-                                    <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8C%D0%BE%D1%80%D0%B8_HTML" style="font-size: 16px">Вікіпедія</a><br>
-                                    <a href="https://www.w3schools.com/colors/colors_names.asp">Кольори, які можна задавати словами</a>
-                                </i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>color</td>
-                            <td>Колір тексту</td>
-                        </tr>
-                        <tr>
-                            <td>span-family</td>
-                            <td>Шрифт</td>
-                            <td>sans-serif (шрифти без засічок)</td>
-                        </tr>
-                        <tr>
-                            <td>span-size</td>
-                            <td>Розмір символів</td>
-                            <td>10px, 50px, 25px...</td>
-                        </tr>
-                        <tr>
-                            <td>text-align</td>
-                            <td>Розміщення тексту</td>
-                            <td>right, left, center</td>
-                        </tr>
-                        <tr>
-                            <td>border-collapse</td>
-                            <td>Проміжки між межами в таблиці</td>
-                            <td>collapse (прибирає проміжки між межами)</td>
-                        </tr>
-                        <tr>
-                            <td>margin</td>
-                            <td>Зовнішній відступ</td>
-                            <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
-                        </tr>
-                        <tr>
-                            <td>padding</td>
-                            <td>Внутрішній відступ</td>
-                            <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
-                        </tr>
-                        <tr>
-                            <td>float</td>
-                            <td>Приклеювання до краю</td>
-                            <td>left right</td>
-                        </tr>
-                        <tr>
-                            <td>text-decoration</td>
-                            <td>Підкреслення тексту</td>
-                            <td>none underline</td>
-                        </tr>
-                        <tr>
-                            <td>border-radius</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <!-- <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr> -->
-                        <tr>
-                            <td>display</td>
-                            <td></td>
-                            <td>flex block none inline</td>
-                        </tr>
+                        <table class="command-table">
+                            <thead>
+                                <tr>
+                                    <td>Css стилі</td>
+                                    <td>Призначення</td>
+                                    <td>Приклади значень</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>border</td>
+                                    <td>Межа<br>(товщина тип колір)</td>
+                                    <td>1px solid black<br>3px solid green</td>
+                                </tr>
+                                <tr>
+                                    <td>background-color</td>
+                                    <td>Колір фону</td>
+                                    <td rowspan="2">red, green, blue...<br>#f4ffe5, #FFFF00<br>
+                                        <i>
+                                            Сайти з кольрами:<br>
+                                            <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8C%D0%BE%D1%80%D0%B8_HTML" style="font-size: 16px">Вікіпедія</a><br>
+                                            <a href="https://www.w3schools.com/colors/colors_names.asp">Кольори, які можна задавати словами</a>
+                                        </i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>color</td>
+                                    <td>Колір тексту</td>
+                                </tr>
+                                <tr>
+                                    <td>font-family</td>
+                                    <td>Шрифт</td>
+                                    <td>sans-serif (шрифти без засічок)</td>
+                                </tr>
+                                <tr>
+                                    <td>font-size</td>
+                                    <td>Розмір символів</td>
+                                    <td>10px, 50px, 25px...</td>
+                                </tr>
+                                <tr>
+                                    <td>text-align</td>
+                                    <td>Розміщення тексту</td>
+                                    <td>right, left, center</td>
+                                </tr>
+                                <tr>
+                                    <td>border-collapse</td>
+                                    <td>Проміжки між межами в таблиці</td>
+                                    <td>collapse (прибирає проміжки між межами)</td>
+                                </tr>
+                                <tr>
+                                    <td>margin</td>
+                                    <td>Зовнішній відступ</td>
+                                    <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
+                                </tr>
+                                <tr>
+                                    <td>padding</td>
+                                    <td>Внутрішній відступ</td>
+                                    <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
+                                </tr>
+                                <tr>
+                                    <td>float</td>
+                                    <td>Приклеювання до краю</td>
+                                    <td>left right</td>
+                                </tr>
+                                <tr>
+                                    <td>text-decoration</td>
+                                    <td>Підкреслення тексту</td>
+                                    <td>none underline</td>
+                                </tr>
+                                <tr>
+                                    <td>border-radius</td>
+                                    <td>Заокруглення кутів</td>
+                                    <td>2px, 5px, 10px...</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                                <tr>
+                                    <td>display</td>
+                                    <td>Визначає, як об'єкт відображатиметься на екрані, які властивості матиме</td>
+                                    <td>flex block none inline</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -164,7 +174,7 @@
                 <div class="table_flex__content">
                     <h2>Все що стосується display: flex</h2>
                     <div class="scroll-x">
-                        <table>
+                        <table class="command-table">
                             <tr>
                                 <td>justify-content</td>
                                 <td>Вирівнювання елементів по горизонталі</td>
@@ -197,8 +207,8 @@
                 <div class="text">
                     <h2>Контактні дані:</h2>
                     <p>Номер телофону — **********<br>Електронна адреса — **********</p>
-                    <h2>Корисні сайти:</h2>
-                    <!-- <p>
+                    <!-- <h2>Корисні сайти:</h2>
+                    <p>
                         <a href="https://css.in.ua/">Український веб-довідник</a>
                     </p> -->
 

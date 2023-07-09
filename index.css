@@ -78,6 +78,15 @@ h1 {
 
 .about-html img, .about-css img {
     width: 112px;
+    transition: 1s ease-out;
+}
+
+.about-html img:hover {
+    filter: drop-shadow(0 0 1rem #f16529);
+}
+
+.about-css img:hover {
+    filter: drop-shadow(0 0 1rem #29a9df);
 }
 
 .about-html p, .about-css p {
@@ -96,7 +105,7 @@ h1 {
     margin-right: 30px;
 }
 
-.link a, .link a {
+.link a {
     padding: 9px 38px;
     border-radius: 20px 0px;
     text-decoration: none;
