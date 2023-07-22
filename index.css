@@ -103,6 +103,7 @@ h1 {
 
 .link p {
     margin-right: 30px;
+    font-size: 16px;
 }
 
 .link a {
@@ -111,6 +112,18 @@ h1 {
     text-decoration: none;
     background-color: #9CFF9A;
     color: #000000;
+    font-size: 16px;
+    transition: 0.2s, 0.5s background-color ease-out;
+    box-shadow: 2px 2px 0 2px orange;
+}
+
+.link a:focus {
+    box-shadow: 0 0 0 0 orange;
+    transform: translate(4px, 4px);
+}
+
+.link a:hover {
+    background-color: #04ff00;
 }
 
 
@@ -122,6 +135,15 @@ h2 {
     font-weight: 400;
     margin-bottom: 50px;
     margin-top: 0;
+}
+
+.examples__content img {
+    transition: 0.8s;
+}
+
+.examples__content img:hover {
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.6),
+    0px 15px 10px 0px rgba(0,0,0,0.14);
 }
 
 .note {

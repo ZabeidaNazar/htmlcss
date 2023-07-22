@@ -53,14 +53,15 @@
                         </div>
                     </div>
                     
-            
-                    <p>Css стилі записуються в атрибуті style:<br>стиль: значення; стиль: значення</p>
-                    <p>Наприклад задамо параграфу з текстом 'Hello world!' зелений фон і жовтий колір тексту<br>
-                        Код виглядатиме ось так:<br>
-                        <span>&ltp style="background-color: green; color: yellow"&gtHello world!&lt/p&gt</span>
-                        <br>Результат:<br>
-                    </p>
-                    <p style="background-color: green; color: yellow">Hello world!</p>
+                    
+                    <p>Css стилі можна задавати кількома способоми:</p>
+                    <ul>
+                        <li>Записувати в атрибуті style: стиль: значення; стиль: значення</li>
+                        <li>Записувати в парному тегу style</li>
+                        <li>Записувати в файлі з розширенням .css</li>
+                    </ul>
+                    <p>Останній спосіб найкращий, але потрібно не забути підключити css файл до файлу html.<br>
+                    Для цього необхідно скористатися командою <span>&ltlink rel="stylesheet" href="&ltшлях до css файлу&gt"&gt</span></p>
                 </div>
             </div>
         </section>
@@ -97,6 +98,11 @@
                                 <tr>
                                     <td>color</td>
                                     <td>Колір тексту</td>
+                                </tr>
+                                <tr>
+                                    <td>opacity</td>
+                                    <td>Прозорість</td>
+                                    <td>від 0 (повністю прозоро) до 1 (зовсім непрозоро)</td>
                                 </tr>
                                 <tr>
                                     <td>font-family</td>
@@ -143,26 +149,16 @@
                                     <td>Заокруглення кутів</td>
                                     <td>2px, 5px, 10px...</td>
                                 </tr>
-                                <!-- <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr> -->
                                 <tr>
                                     <td>display</td>
                                     <td>Визначає, як об'єкт відображатиметься на екрані, які властивості матиме</td>
                                     <td>flex block none inline</td>
                                 </tr>
+                                <!-- <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
@@ -189,6 +185,11 @@
                                 <td>flex-wrap</td>
                                 <td>Перенесення елементів на нові рядки</td>
                                 <td>wrap<br>no-wrap</td>
+                            </tr>
+                            <tr>
+                                <td>flex-direction</td>
+                                <td>Напрямок вирівнювання: горизонтальний чи вертикальний</td>
+                                <td>row (defoult)<br>column</td>
                             </tr>
                             <!-- <tr>
                                 <td></td>

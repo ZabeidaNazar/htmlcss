@@ -1,5 +1,11 @@
 .scroll-x {
-    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+@media (max-width: 399px) {
+    .scroll-x {
+        overflow-x: scroll;
+    }
 }
 
 .command-table {

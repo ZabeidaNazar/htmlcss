@@ -28,6 +28,11 @@
     font-size: 14px;
 }
 
+.footer .text a img {
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
 .footer .text a img:hover {
     border: 3px solid black;
     border-radius: 50%;
